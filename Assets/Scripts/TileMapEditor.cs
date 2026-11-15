@@ -8,7 +8,7 @@ using UnityEngine.Tilemaps;
 public class TileMapEditor : MonoBehaviour
 {
     //A assinatura da nossa operação leva em consideração a célula clicada no tilemap
-    public UnityAction<Vector3Int> selectedAction;
+    public UnityAction<Vector3Int> selectedAction; // Funções atribuidas devem ser void Funcao(Vector3Int atributo);
 
     private Tilemap tilemap;
 

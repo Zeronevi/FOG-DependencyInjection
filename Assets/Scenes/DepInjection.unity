@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 731103422}
   - component: {fileID: 731103421}
   m_Layer: 5
-  m_Name: Delete
+  m_Name: Create River
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,7 +396,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 731103422}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1088643711}
+        m_TargetAssemblyTypeName: MapEditorTools, Assembly-CSharp
+        m_MethodName: UseToolCreateRiver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &731103422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,7 +1054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Criar
+  m_text: Cria Grama
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1256,7 +1268,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Deletar
+  m_text: Cria Rio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1347,6 +1359,7 @@ GameObject:
   - component: {fileID: 1088643709}
   - component: {fileID: 1088643708}
   - component: {fileID: 1088643710}
+  - component: {fileID: 1088643711}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -1394,9 +1407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fb5b0974af2d724898c88dae5ce90aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  grassTile: {fileID: 11400000, guid: e298c4a3a4bee6146bc450ea7c885f08, type: 2}
-  iceTile: {fileID: 0}
-  desertTile: {fileID: 0}
   clickAction:
     m_Name: Click
     m_Type: 1
@@ -1415,6 +1425,22 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
+--- !u!114 &1088643711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088643707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f5c379cb274cf46ba88a85ac2e7b3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MapEditorTools
+  tilemap: {fileID: 777521138}
+  grassTile: {fileID: 11400000, guid: 3b074a5c3b3fa8d4e912ba2ad3c026a1, type: 2}
+  riverTile: {fileID: 11400000, guid: e298c4a3a4bee6146bc450ea7c885f08, type: 2}
+  tileMapEditor: {fileID: 1088643710}
 --- !u!1 &1758441161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,7 +1523,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1758441164}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1088643711}
+        m_TargetAssemblyTypeName: MapEditorTools, Assembly-CSharp
+        m_MethodName: UseToolCreateGrass
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1758441164
 MonoBehaviour:
   m_ObjectHideFlags: 0
